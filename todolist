@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TO DO</title>
+</head>
+<body>
+
+	<input type="text" id= "new_list_item">
+
+
+	<button onclick = "addItem()">Add ITEM</button>
+
+
+	<script type="text/javascript">
+		var listItems = ['Clothes', 'Footwear'];
+	</script>
+
+
+	<script type="text/javascript">
+		function addItem(){
+			var tempItem = document.getElementById("new_list_item").value;
+			listItems.push(listItems);
+			displayList(tempItem);
+		}
+	</script>
+
+
+<div id = "display">
+
+	<h3> YOUR TODO:</h3>
+	<ul>
+
+
+	<script type="text/javascript">
+		
+		listItems.forEach(displayList);
+
+		function displayList(item){
+			document.getElementById("display").innerHTML += "<li>"+item+"</li>"
+		}
+	</script>
+
+	</ul>
+</div>
+</body>
+</html>
